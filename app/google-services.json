@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "209084183823",
+    "firebase_url": "https://ivoh-f7a0a.firebaseio.com",
+    "project_id": "ivoh-f7a0a",
+    "storage_bucket": "ivoh-f7a0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209084183823:android:33a2ce1a5f694ffa",
+        "android_client_info": {
+          "package_name": "com.ivoh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209084183823-os58ovpsh13m1lmrhg02c96e0fgehti9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ivoh",
+            "certificate_hash": "eeb0c338fe7112f1b3e7741905dd95b0b382dabd"
+          }
+        },
+        {
+          "client_id": "209084183823-rqdej76l6i8h6lmluk3e1dm3k86rgelf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN6j0KzM0Jo_FcYHp4ZMIiXBTarJDQUeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209084183823-rqdej76l6i8h6lmluk3e1dm3k86rgelf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
