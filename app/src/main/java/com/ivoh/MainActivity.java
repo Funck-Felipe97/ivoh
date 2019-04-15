@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         referenciaFirebase
-                .child("pontos")
+                .child("teste")
                 .setValue(100);
 
     }
