@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fvf.ivoohcliente">
 
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true"/>
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -12,6 +20,16 @@
         <activity android:name=".activity.AutenticacaoActivity"></activity>
         <activity android:name=".activity.CadastroUsuarioActivity"></activity>
         <activity android:name=".activity.HomeActivity"></activity>
+        <activity android:name=".activity.VendedorActivity"></activity>
+        <activity android:name=".activity.NovoProdutoVendedorActivity"
+            android:parentActivityName=".activity.VendedorActivity">
+        </activity>
+        <activity android:name=".activity.ConfiguracoesEmpresaActivity"
+            android:parentActivityName=".activity.VendedorActivity">
+        </activity>
+        <activity android:name=".activity.ConfiguracoesUsuarioActivity"
+            android:parentActivityName=".activity.HomeActivity">
+        </activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

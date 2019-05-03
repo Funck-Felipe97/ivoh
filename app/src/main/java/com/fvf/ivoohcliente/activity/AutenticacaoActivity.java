@@ -16,7 +16,6 @@ import android.widget.Toast;
 import com.fvf.ivoohcliente.R;
 import com.fvf.ivoohcliente.Service.UsuarioService;
 import com.fvf.ivoohcliente.helper.FirebaseConfig;
-import com.fvf.ivoohcliente.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -38,7 +37,6 @@ public class AutenticacaoActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_autenticacao);
-        getSupportActionBar().hide();
 
         autenticacao = FirebaseConfig.getFirebaseAuth();
         inicializarComponentes();
@@ -172,7 +170,7 @@ public class AutenticacaoActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                 }
                 if ("Vendedor".equals(usuario.getTipoUsuario())) {
-                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(), VendedorActivity.class));
                 }
             }
         };

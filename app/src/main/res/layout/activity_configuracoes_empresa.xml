@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagePerfilEmpresaId"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/perfil" />
+
+        <EditText
+            android:id="@+id/edtNomeEstabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_edit_text"
+            android:ems="10"
+            android:hint="Nome estabelecimento"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/edtCategoriaEstabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_edit_text"
+            android:ems="10"
+            android:hint="Categoria"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/edtTempoEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_edit_text"
+            android:ems="10"
+            android:hint="Tempo de entrega"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/edtValorEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_edit_text"
+            android:ems="10"
+            android:hint="Taxa de entrega"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btnSalvarConfiguracoesVendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="validarDadosVendedor"
+            android:padding="16dp"
+            android:text="Cadastrar"
+            android:theme="@style/botaoPadrao" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

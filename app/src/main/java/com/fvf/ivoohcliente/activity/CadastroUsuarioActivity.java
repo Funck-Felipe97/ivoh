@@ -39,7 +39,6 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_usuario);
-        getSupportActionBar().hide();
 
         usuario = new Usuario();
         iniciarCampos(getIntent().getExtras());
@@ -182,6 +181,8 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
     private void abrirTelaPrincipal() {
         if ("Comprador".equals(usuario.getTipoUsuario())) {
             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+        } else {
+            startActivity(new Intent(getApplicationContext(), VendedorActivity.class));
         }
     }
 
