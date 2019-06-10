@@ -88,7 +88,6 @@ public class VendedorActivity extends AppCompatActivity {
         new ProdutoService().getProdutosByEmpresa(callback);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

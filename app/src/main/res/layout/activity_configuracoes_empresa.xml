@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:onClick="validarDadosVendedor"
             android:padding="16dp"
-            android:text="Cadastrar"
+            android:text="Salvar"
             android:theme="@style/botaoPadrao" />
 
     </LinearLayout>

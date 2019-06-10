@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -40,6 +41,8 @@ public class NovoProdutoVendedorActivity extends AppCompatActivity {
     }
 
     private void preencherCampos() {
+        Button btnSalvar = findViewById(R.id.btnSalvarProduto);
+        btnSalvar.setText("Salvar");
         Produto produto = (Produto) getIntent().getExtras().get("produto");
         if (produto != null) {
             edtNomeProduto.setText(produto.getNome());
